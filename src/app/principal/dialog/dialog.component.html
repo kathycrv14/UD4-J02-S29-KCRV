@@ -1,0 +1,26 @@
+<section class="sectionGeneral container">
+    <section class="sectionDialogForm row" mat-dialog-content>
+        <h1 mat-dialog-title class="col-12">Articulo</h1>
+        <mat-form-field appearance="fill" class="col-12">
+            <mat-label>Ingrese codigo</mat-label>
+            <input matInput [(ngModel)] ="data.codigo">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="col-12">
+            <mat-label>Ingrese descripcion</mat-label>
+            <input matInput [(ngModel)] ="data.descripcion">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="col-12">
+            <mat-label>Ingrese precio</mat-label>
+            <input matInput [(ngModel)] ="data.precio">
+        </mat-form-field>
+    </section>
+    
+    <section class="sectionButton row">
+        <button mat-button color="primary" type="button" (click)="cancelar()">Cancelar</button>
+        <button mat-button  [mat-dialog-close]="data.name" color="primary" type="button"(click)="confirmar()" >Confirmar</button>
+    </section>  
+</section>
+
+

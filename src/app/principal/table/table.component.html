@@ -1,0 +1,29 @@
+<section class="sectionGeneral">
+    <section class="sectionTable">
+        <section class="sectionButton">
+            <button class="button" mat-raised-button color="accent" type="button" (click) ="anadir()">agregar</button>
+        </section>  
+        <table>
+            <thead>
+                <tr>
+                    <th>codigo</th>
+                    <th>descripcion</th>
+                    <th>precio</th>
+                    <th>opcion</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of lista">
+                    <td>{{ item.codigo }}</td>
+                    <td>{{ item.descripcion }}</td>
+                    <td>{{ item.precio }}</td>
+                    <td>
+                        <section class="sectionButton">
+                            <button class="button" mat-raised-button color="primary" type="button" (click) ="eliminar(item.codigo)">eliminar</button>
+                        </section>  
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</section>

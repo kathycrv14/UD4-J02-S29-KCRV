@@ -1,0 +1,28 @@
+.sectionGeneral{
+    align-items: center;
+    justify-content: center;
+    display: block;
+    flex: wrap;
+}
+
+.sectionDialogForm{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex: wrap;
+}
+
+.sectionButton{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex: wrap;
+
+    margin-bottom: 2rem
+}
+
+button{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 10rem;
+}
